@@ -4,7 +4,7 @@ import React from "react";
 export default function MenuItem({ title, address, Icon }) {
   return (
     <div>
-      <Link href={address} className="mx-4 lg:mx-6 hover:text-red-600">
+      <Link href={address} className="mx-4 lg:mx-6 hover:text-red-500">
         {/* Icon is passed as a prop to the MenuItem
       So even though Icon is passed as a prop to the MenuItem component, 
       it can still be used as a component within the MenuItem component's output.
