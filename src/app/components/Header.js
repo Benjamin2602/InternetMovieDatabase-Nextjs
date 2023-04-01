@@ -3,6 +3,7 @@ import MenuItem from "./MenuItem";
 import { AiFillHome } from "react-icons/ai";
 import { BsFillInfoSquareFill } from "react-icons/bs";
 import Link from "next/link";
+import DarkModeSwitch from "./DarkModeSwitch";
 
 export default function Header() {
   return (
@@ -20,7 +21,12 @@ export default function Header() {
       </div>
 
       {/* right side of the header  */}
-      <div className="">
+      <div className="flex items-center space-x-5">
+        {/* logo for dark mode */}
+        <DarkModeSwitch/>
+
+
+
         <Link href="/">
           <h2 className="text-2xl">
           <span className="font-bold bg-red-400 py-1 px-2 rounded-lg mr-1">IMDb</span>
